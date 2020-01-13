@@ -3,7 +3,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn clean package'
+               sh 'cd/'
+               sh 'cd MVN'
+               sh 'cd myapp'
+               sh 'mvn clean package'
             }
         }
     }
